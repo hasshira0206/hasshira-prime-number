@@ -4,7 +4,9 @@ st.sidebar.title("はっしら数学同好会")
 st.sidebar.write("好きな制作物を選択してください")
 if st.sidebar.checkbox("自然数を2つの素数の和で表す君"):
   st.title("自然数(偶数)を2つの素数の和で表す君")
-  n=st.slider("お好きな自然数を入力",5,10000)
+  n=st.slider("お好きな自然数を入力（偶数で）",5,10000)
+  if n%2!=0:
+    n+=1
   def prime(n):
     n1=n
     n2=n
