@@ -7,6 +7,7 @@ if st.sidebar.checkbox("自然数を2つの素数の和で表す君"):
   n=st.slider("お好きな自然数を入力（偶数で）",5,10000)
   if n%2!=0:
     n+=1
+    st.write("あなたが入力したのは奇数です！！失望しました！偶数にしますよ！")
   def prime(n):
     n1=n
     n2=n
