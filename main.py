@@ -1,7 +1,7 @@
 import streamlit as st
 st.title("自然数を2つの素数の和で表す君")
+n=st.slider("お好きな自然数を入力",5,10000)
 while True:
-  n=st.slider("お好きな自然数を入力",5,10000)
   n1=n
   n2=n
   n//=2
