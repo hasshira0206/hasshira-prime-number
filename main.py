@@ -1,7 +1,7 @@
 import streamlit as st
 st.title("自然数を2つの素数の和で表す君")
 n=st.slider("お好きな自然数を入力",5,10000)
-while True:
+def prime(n):
   n1=n
   n2=n
   n//=2
@@ -25,6 +25,6 @@ while True:
     if x!=1:
       if y!=1:
         if flag:
-            kotae=("[{}]＋[{}]ですねぇ".format(x,y))
-  if st.checkbox("結果を本当に見ちゃう？？？？"):
-      st.write(kotae)
+            return "[{}]＋[{}]ですねぇ".format(x,y)
+if st.checkbox("結果を本当に見ちゃう？"):
+    st.write(prime(n))
